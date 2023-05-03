@@ -11,6 +11,6 @@ test_df = pd.read_csv('testing.csv')
 
 test_set_predictions = trainer.generate_test_predictions(test_df.excerpt.tolist())
 
-test_set_results = trainer.generate_test_results(test_df, False, False)
+test_set_results = trainer.generate_test_results(test_df, False, True)
 
 print(test_set_results)
